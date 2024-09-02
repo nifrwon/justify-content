@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout</title>
+    <style>
+        .container, p, h2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+         /* Select all the elements that are the direct 
+      children of the .container class  */
+        .container > *{
+            flex-basis: 100px;
+        }
+        .red{background-color: red;}
+        .yellow{background-color: yellow;}
+        .green{background-color: green;}
+        .purple{background-color: purple;}
+        .black{background-color: black;
+                 color: wheat;
+            }
+        .blue{background-color: blue;}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red">red</div>
+        <div class="yellow">yellow</div>
+        <div class="green">green</div>
+        <div class="purple">purple</div>
+        <div class="black">black</div>
+        <div class="blue">blue</div>
+    </div>
+    <p>
+    <Strong>justify-content property with value center:</Strong>
+    Items are positioned in the center of the container
+    </p>
+    <h2>See the other values  for the justify-content property</h2>
+    <ul>
+        <li><a href="public/flex-end.html">Flex-end</a></li>
+        <li><a href="public/flex-start.html">Flex-start</a></li>
+        <li><a href="public/space-between.html">Space-between</a></li>
+    </ul>
+</body>
+</html>
